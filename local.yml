@@ -4,7 +4,7 @@
   pre-tasks:
     - name: Install roles
       become: True
-        shell: "ansible-galaxy install {{item}}"
+        shell: ansible-galaxy install "{{ item }}"
       loop:
       - nolte.minecraft
   roles:

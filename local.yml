@@ -1,9 +1,8 @@
 ---
 - hosts: localhost
   become: True
-  pre-tasks:
+  pre_tasks:
     - name: Install roles
-      become: True
       shell: ansible-galaxy install "{{ item }}"
       with_items:
       - nolte.minecraft

@@ -1,6 +1,7 @@
 ---
 - hosts: localhost
   become: True
+  become_user: root
   pre_tasks:
     - name: Install roles
       shell: ansible-galaxy install "{{ item }}"

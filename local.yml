@@ -2,4 +2,4 @@
 - hosts: localhost
   become: True
   roles:
-  - { role: nolte.minecraft, minecraft_whitelist: ["jillfire", "tedvi"]}
+  - nolte.minecraft
